@@ -1,0 +1,163 @@
+ /* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  a {
+    color: #0515ec;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header styles */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  /* Navigation styles */
+  
+  nav {
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    font-size: 1.2em;
+    
+  }
+  
+  nav a:hover {
+    background-color: #0515ec;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  /* Main content styles */
+  /* slide show */
+  
+  .slideshow {
+    width: 90%;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 5%;
+  }
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(248, 241, 204);
+    text-align: center;
+    padding-top: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .mySlides ul li{
+    list-style: none;
+    text-decoration: solid;
+  }
+  .mySlides img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* main */
+  main {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* images */
+  .about img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  meta {
+    color: red;
+  }
+  
+  section {
+    margin: 2px 0;
+  }
+
+  .about {
+    background-color: lightgrey;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  section h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  /* Footer styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #0515ec;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Futurize</title>
+  <link rel="stylesheet" href="futurize.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Futurize</h1>
+    <p>"Innovative solutions for a better future"</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Our Products</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="slideshow">
+    <div class="mySlides">
+      <h1><b>Did You Know?</b></h1>
+      <h1><i>We plan to sell trips to the moon in the 2040s</i></h1>
+    </div>
+    <div class="mySlides">
+       <h1>we bring you today the latest technologies in the World</h1>
+       <h1>Do you want to learn some programing languages like</h1>
+       <ul>
+        <li>python</li>
+        <li>css</li>
+        <li>html</li>
+        <li>javascript</li>
+       </ul>
+    </div>
+  
+     
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+  }
+  </script>
+  
+  <main>
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <img src="images/ceo.jpg">
+      <p>MR. AHUMUZA INNOCENT<br>Chief Executive Offier (CEO)</p>
+      <a href="more.html"><b>More</b></a>
+      <h2>Our Team</h2>
+      <p>Currently still recruiting</p>
+      <p><b>Our Mission</b> is to bring innovative solutions to the market that help shape the future.<br><br>
+         We are driven by a desire to create products and services that make a positive impact on people's
+          lives and the world around us. By constantly pushing the boundaries of what is possible and staying
+           ahead of the curve, we aim to be a leader in the field of cutting-edge technology and design.</p>
+    </section>
+    <section id="products">
+      <h2>Our Products</h2>
+      <ul>
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+      </ul>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li><a href="#"><b>Web design and Development</b></a></li>
+        <li><a href="#"><b>Database Design and Development</b></a></li>
+        <li><a href="#"><b>Software design And Development</b></a> <meta>Coming Soon</meta></li>
+      </ul>
+      <h4>Other</h4>
+      <ul>
+        <li>Training Web Design and Development</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: 555-555-5555</p>
+      <p>Email: info@futurize.com</p>
+      <p>Address: 123 Main Street, Anytown USA</p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2021 Futurize</p>
+    <p><a href="/privacy-policy">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
